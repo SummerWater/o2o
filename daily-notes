@@ -21,3 +21,6 @@
   1.模型中$this->select()改为$this->paginate(x).x为一页多少条数据
   2.模板中添加 {$category->render()} 
   3.修改样式
+
+# ajax返回
+  内置 $this->result('data', 'code', 'msg') 函数，返回json格式.
