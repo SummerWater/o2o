@@ -8,3 +8,11 @@
   2.XXX继承Validate.
   3.配置protected $rule = [ ['id','number'], ['name', 'require'], ...].
   4.控制器验证, $validate->check($data); if(false) $this->error($validate->getError());
+
+# 模型中添加数据
+  1.model/xxx名称与数据表名称一致。
+  2.$this->save($data)完成数据添加。
+  3.申明 protected $autoWriteTimestamp = true;可自动写入时间戳
+  
+# 查询数据
+  1.控制器中调用$data = model('Category')->getAllData();
