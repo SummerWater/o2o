@@ -1,0 +1,4 @@
+# tp5输出$_POST请求
+  1.dump($_POST);
+  2.dump(input('post.'));
+  3.dump(request()->post());
