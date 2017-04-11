@@ -34,3 +34,7 @@
   1.根目录extend中，导入phpmailer.
   2.app目录中extra添加email.php配置文件
   3.控制器 \phpmailer\Email::send() 调用发送文件.
+ 
+# 联动
+  1.选择框change function 向api发送ajax.
+  2.根据返回的json数据，做相应操作.
