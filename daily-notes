@@ -29,3 +29,8 @@
   1.根目录extend中，创建Map.php.其中，使用 cinfig('xx.xxx') ，可以调用 app/extra/xx 中定义的xxx
   2.在common.php中封装 doCurl($address) 函数.返回JSON格式地址.
   3.控制器中调用方法：\Map::getLngLat('北京华天大厦').
+ 
+# 封装邮件发送
+  1.根目录extend中，导入phpmailer.
+  2.app目录中extra添加email.php配置文件
+  3.控制器 \phpmailer\Email::send() 调用发送文件.
