@@ -24,3 +24,8 @@
 
 # ajax返回
   内置 $this->result('data', 'code', 'msg') 函数，返回json格式.
+
+# 封装百度地图函数
+  1.根目录extend中，创建Map.php.其中，使用 cinfig('xx.xxx') ，可以调用 app/extra/xx 中定义的xxx
+  2.在common.php中封装 doCurl($address) 函数.返回JSON格式地址.
+  3.控制器中调用方法：\Map::getLngLat('北京华天大厦').
