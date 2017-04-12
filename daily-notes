@@ -38,3 +38,11 @@
 # 联动
   1.选择框change function 向api发送ajax.
   2.根据返回的json数据，做相应操作.
+ 
+# 图片上传封装
+  1.使用uploadify插件.
+  2.在image.js中配置uploadify参数
+  3.api/image/upload 方法中调用think\Request
+  4.调用$info = Request::instance()->file('file')获取文件信息
+  5.$info->move('目录名称');
+  6.$info->getPathname()获取上传路径.如果上传成功，则进行回掉操作.
